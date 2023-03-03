@@ -20,7 +20,7 @@ df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
 
 df.head()
 
-#Creat context
+#Create context
 
 def create_context(
     question, df, max_len=1800, size="ada"
@@ -58,7 +58,7 @@ def create_context(
 def answer_question(
     df,
     model="gpt-3.5-turbo",
-    question="How can I create a data source within the Fliplet platform? ",
+    question="What is Fliplet?",
     max_len=1800,
     size="ada",
     debug=False,
