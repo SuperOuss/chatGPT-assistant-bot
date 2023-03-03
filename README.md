@@ -42,10 +42,24 @@ Please follow  these steps to get started:
 
 ## Experimentations 
 
+### temperature
+
 The requests for the openAI are already a bit tuned, but you can still work on the "temperature" parameter. 
 
 The parameter is between 0 and 1 where 0 is no risk at all while building the response and a temperature of 1 will make the AI hallucinate responses. 
 
 It's currently set at 0.5, you can change it at line 86 of the file "test.py"
 
+### Stance and prompt
 
+The bot is currently configured with an "assistant" stance, it'll try to answer questions the best it can within this stance and temperature. 
+
+You can change that in line 89. 
+
+This code defines how we interact with the bot: 
+
+`messages=[{"role": "assistant", "content": f"Answer the question based on the context below, and if the question can't be answered based on the context, say \"I don't know\"\n\nContext: {context}\n\n---\n\nQuestion: {question}\nAnswer:"}]`
+
+The "role" part of this code defines the stance of the bot. 
+
+You can also modify the static part of this prompt in order to define how the bot behaves when it doesn't know the answer to a prompt. 
