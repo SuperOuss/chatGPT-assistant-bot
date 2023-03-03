@@ -1,4 +1,4 @@
-# Fliplet support Chatbot
+#Support assistant Chatbot
 
 This a test script that : 
 
