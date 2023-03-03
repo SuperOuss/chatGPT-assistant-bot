@@ -2,11 +2,11 @@
 
 This a test script that : 
 
-1 - Crawls through one or more domains and extracts text from them (Stored in flat .txt files)
-2 - Creates openAI tokens using the openAI library Tiktoken
-3 - Organizes these tokens as embeddings in a CSV file "embeddings.csv"
-4 - Creates the context for a question usings these embeddings: Analyses the embeddings and determines the most relevant tokens to attach to the question as context
-5 - Sends a prompt with a context to the openAI model "gpt-3.5-turbo-0301" 
+- Crawls through one or more domains and extracts text from them (Stored in flat .txt files)
+- Creates openAI tokens using the openAI library Tiktoken
+- Organizes these tokens as embeddings in a CSV file "embeddings.csv"
+- Creates the context for a question usings these embeddings: Analyses the embeddings and determines the most relevant tokens to attach to the question as context
+- Sends a prompt with a context to the openAI model "gpt-3.5-turbo-0301" 
 
 Once the web crawling is done and the embeddings file is read, you can use test.py to only send and receive prompts.
 
